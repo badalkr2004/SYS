@@ -31,7 +31,7 @@
     background: var(--color-primary);
     width: 100%;
     text-align: center;
-    top: -1000px;
+    /* top: -1000px; */
     z-index: -1;
     transition: top 1.5s;
   }
@@ -53,15 +53,20 @@
   .bar-icon {
     display: block;
   }
-
-  #check:checked ~ .nav-links {
-    top: 125px;
-    transition: all 0.25s;
-  }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .contact .contact-container .address,
+  .contact .contact-container .location {
+    margin: 1rem 2rem;
+  }
+}
 @media only screen and (max-width: 992px) {
+  .contact .contact-container .address,
+  .contact .contact-container .location {
+    margin: 1rem 2rem;
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */

@@ -17,7 +17,7 @@
 </head>
 
 <body>
-  <header class="header-container">
+  <header class="header-container" id="home">
     <div class="query">
       <p>Any question?</p>
       <span>9773372363</span>
@@ -32,38 +32,34 @@
     <div class="brand d-flex-justify-align-center">
       <h2 class="brand-name">SYS - A Digital Platform</h2>
     </div>
-    <nav class="navbar d-flex">
+    <nav class="navbar d-flex" id="navbar">
       <div class="logo"></div>
-      <input type="checkbox" id="check" />
 
       <ul class="nav-links d-flex">
         <li class="nav-item">
-          <a href="#"><label for="check">Home</label></a>
+          <a href="#home">Home</a>
         </li>
         <li class="nav-item">
-          <a href="#"><label for="check">Our Works</label></a>
+          <a href="#about-us">About Us</a>
         </li>
         <li class="nav-item">
-          <a href="#about"><label for="check">About us</label></a>
+          <a href="#our-works">Our Works</a>
         </li>
         <li class="nav-item">
-          <a href="#"><label for="check">Contact us</label></a>
+          <a href="#contact-us">Contact us</a>
         </li>
       </ul>
 
       <div class="bar-icon">
-        <label for="check"> <i class="fa-solid fa-bars"></i></label>
-      </div>
+        <i class="fa-solid fa-bars" id="hamberger"></i>
     </nav>
   </header>
   <section class="hero-section">
-    <figure class="hero-image">
-      <img src="Assets/illustrtions/homepage.svg" alt="" />
-    </figure>
+    <img src="Assets/illustrtions/homepage.svg" alt="" draggable="false" />
   </section>
 
 
-  <section class="about" id="about">
+  <section class="about" id="about-us">
     <h1 class="about-heading">About US</h1>
 
     <div class="info">
@@ -159,7 +155,8 @@
             </span>
           </div>
           <hr style="margin: 10px 0;">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit officiis, impedit exercitationem rem,
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit officiis, impedit exercitationem
+            rem,
             nostrum ven Lorem ipsum dolor sit, ame sit error delectus suscipit, necessitatibus facere!
           </p>
         </div>
@@ -192,7 +189,8 @@
             </span>
           </div>
           <hr style="margin: 10px 0;">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit officiis, impedit exercitationem rem,
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit officiis, impedit exercitationem
+            rem,
             nostrum ven Lorem ipsum dolor sit, ame sit error delectus suscipit, necessitatibus facere!
           </p>
         </div>
@@ -225,7 +223,8 @@
             </span>
           </div>
           <hr style="margin: 10px 0;">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit officiis, impedit exercitationem rem,
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam suscipit officiis, impedit exercitationem
+            rem,
 
           </p>
         </div>
@@ -239,8 +238,9 @@
 
 
   <!-- Contact us section  -->
-  <section class="contact">
-    <h1>Contact Us</h1>
+  <section class="contact" id="contact-us">
+
+    <h1 class="contact-heading">Contact Us</h1>
     <div class="contact-container">
       <div class="address">
         <div class="effect">
@@ -259,6 +259,24 @@
     </div>
 
   </section>
+
+
+  <!-- footer section  -->
+  <footer>
+    <div class="footer-icons">
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-linkedin"></i>
+      <i class="fa-brands fa-github"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-solid fa-phone-flip"></i>
+    </div>
+
+    <div class="footer-text">
+      <p>© 2022 Copyright: sysnow.com</p>
+    </div>
+  </footer>
+
 </body>
 
 </html>
